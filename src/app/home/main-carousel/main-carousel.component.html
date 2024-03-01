@@ -2,5 +2,9 @@
   <div class="carousel-container overflow-x-hidden">
     <div class="carousel"></div>
     <!-- [style.transform]="translateX(-'+(currentSlide*100)+'%)'" -->
+    <ng-container class="" *ngFor="let item of carouselData; let i = index">
+      <a [routerLink]="item.path" class="carousel-item">
+        <img src="https://www.wwwew" alt="" /></a
+    ></ng-container>
   </div>
 </div>
