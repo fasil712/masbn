@@ -9,6 +9,9 @@ import { HomeComponent } from './home/home.component';
 import { MainCarouselComponent } from './home/main-carousel/main-carousel.component';
 import { HomeProductCardComponent } from './home/home-product-card/home-product-card.component';
 import { ProductSliderComponent } from './home/product-slider/product-slider.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavContentComponent } from './navbar/nav-content/nav-content.component';
 
 @NgModule({
   declarations: [
@@ -17,8 +20,10 @@ import { ProductSliderComponent } from './home/product-slider/product-slider.com
     MainCarouselComponent,
     HomeProductCardComponent,
     ProductSliderComponent,
+    NavbarComponent,
+    NavContentComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
