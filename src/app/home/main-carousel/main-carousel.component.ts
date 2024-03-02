@@ -21,6 +21,6 @@ export class MainCarouselComponent {
     }, 2000);
   }
   nextSlide() {
-    this.currentSlide = (this.currentSlide + 1) % this.carouselData.lenght;
+    this.currentSlide = (this.currentSlide + 1) % this.carouselData.length;
   }
 }
