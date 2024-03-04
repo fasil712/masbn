@@ -1,9 +1,41 @@
 <div
   class="fixed top-0 z-50 right-0 left-0 bg-[#69f0ae] text-gray-800 flex h-16 items-center justify-between"
 >
-  <div class="h-16 items-center justify-between">
-    <div class="">
-        <img class="w-8" [src]="" alt="">
+  <div class="h-16 flex items-center justify-between">
+    <div class="flex items-center">
+      <div class="mr-5">
+        <img
+          class="w-8"
+          src="https://res.cloudinary.com/zenbusiness/q_auto/v1/logaster/logaster-2020-08-t-ecommerce-7.jpg"
+          alt="Logo Image"
+        />
+      </div>
+      <div class="">
+        <div class="flex space-x-4">
+          <a routerLink="/" class="text-gray-800"> Shop With Fasil </a>
+          <div>
+            <button (click)="openNavbarContent('men')" mat-button>Men</button>
+          </div>
+          <div>
+            <button (click)="openNavbarContent('women')" mat-button>
+              Women
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <button (click)="navigateTo('cart')" mat-icon-button>
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+      <button
+        (click)="navigateTo('cart')"
+        mat-raised-button
+        type=""
+        color="accent"
+      >
+        Login
+      </button>
     </div>
   </div>
 </div>
