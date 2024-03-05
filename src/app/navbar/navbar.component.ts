@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -18,8 +18,10 @@ export class NavbarComponent {
   closeNavbarContent() {
     this.isNavbarContentOpen = false;
   }
+
+  @HostListener('document:click', [`$event`])
   onDocumentClick(event: MouseEvent) {
-    const modalContainer = document.querySelector('./modal-container');
+    const modalContainer = document.querySelector('.modal-container');
     const openButtons = document.querySelectorAll('.open-button');
 
     let clickInsideButton = false;

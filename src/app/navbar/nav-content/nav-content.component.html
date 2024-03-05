@@ -6,7 +6,20 @@
         *ngFor="let item of category[selectedSection].sections"
       >
         <h1 class="text-center">{{ item.name }}</h1>
+        <button mat-button *ngFor="let section of item.items">
+          {{ section.name }}
+        </button>
       </div>
+    </div>
+    <div class="hidden lg:block">
+      <div class="mb-5">
+        <img
+          src=""
+          alt=""
+          class="w-[19rem] h-[20rem] object-cover object-top rounded-md"
+        />
+      </div>
+      <p class="text-gray-600">New Arival</p>
     </div>
   </div>
 </div>
