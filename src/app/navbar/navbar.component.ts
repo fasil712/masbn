@@ -8,6 +8,7 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
   isNavbarContentOpen: any;
   currentSection: any;
+  loggedIn: boolean = false;
   navigateTo(path: any) {
     throw new Error('Method not implemented.');
   }

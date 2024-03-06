@@ -10,7 +10,9 @@
       </div>
       <div class="">
         <div class="flex items-center space-x-4">
-          <a routerLink="/" class="text-gray-800 font-semibold text-lg"> Shop With Fasil </a>
+          <a routerLink="/" class="text-gray-800 font-semibold text-lg">
+            Shop With Fasil
+          </a>
           <div>
             <button
               class="open-button"
@@ -37,11 +39,11 @@
         <mat-icon>shopping_cart</mat-icon>
       </button>
       <button
+        *ngIf="loggedIn"
         (click)="navigateTo('cart')"
         mat-raised-button
         type=""
         color="accent"
-        class="hidden"
       >
         Login
       </button>
